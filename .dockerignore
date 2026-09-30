@@ -1,0 +1,14 @@
+node_modules
+dist
+dist-ssr
+.env
+.env.*
+!.env.example
+server/data/*
+!server/data/.gitkeep
+*.sqlite3
+*.sqlite3-*
+.git
+*.log
+Dockerfile
+.dockerignore

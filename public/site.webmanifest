@@ -1,0 +1,14 @@
+{
+  "name": "SnapClass",
+  "short_name": "SnapClass",
+  "description": "Take attendance from a class photo or a voice recording.",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#F3F7F6",
+  "theme_color": "#0B7A80",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}

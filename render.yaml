@@ -1,0 +1,24 @@
+# Render Blueprint: one Node web service that serves both the site and the API.
+# A persistent disk is REQUIRED so the SQLite database survives restarts and deploys,
+# and disks are only available on paid instance types (check Render's current pricing).
+services:
+  - type: web
+    name: snapclass
+    runtime: node
+    plan: starter
+    buildCommand: npm ci && npm run build
+    startCommand: npm start
+    healthCheckPath: /api/health
+    disk:
+      name: snapclass-data
+      mountPath: /var/data
+      sizeGB: 1
+    envVars:
+      - key: NODE_VERSION
+        value: 22
+      - key: DATA_DIR
+        value: /var/data
+      - key: SESSION_SECRET
+        generateValue: true
+      - key: SITE_URL
+        sync: false

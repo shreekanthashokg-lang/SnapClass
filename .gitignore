@@ -1,0 +1,29 @@
+# dependencies
+node_modules/
+
+# build output
+dist/
+dist-ssr/
+
+# environment files (keep .env.example)
+.env
+.env.*
+!.env.example
+
+# local database files (never commit real user data)
+server/data/*
+!server/data/.gitkeep
+
+# logs and caches
+*.log
+npm-debug.log*
+.vite/
+.eslintcache
+coverage/
+
+# editors and OS
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db

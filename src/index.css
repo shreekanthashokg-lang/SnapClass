@@ -1,0 +1,159 @@
+@import "tailwindcss";
+@import "@fontsource-variable/fraunces/opsz.css";
+@import "@fontsource-variable/hanken-grotesk/wght.css";
+
+/*
+ * SnapClass design tokens.
+ * Identity: deep teal and ink on cool paper, with one coral "signal" colour that
+ * marks what is being checked right now. Green and red are reserved for
+ * Present / Absent. The recurring motif is the scan corner (a viewfinder).
+ */
+@theme {
+  --font-display: "Fraunces Variable", "Iowan Old Style", Georgia, serif;
+  --font-sans: "Hanken Grotesk Variable", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  --color-ink: #0c2a30;
+  --color-ink-soft: #3f5a60;
+  --color-ink-mute: #b4cdd1; /* secondary text on ink backgrounds */
+  --color-paper: #f3f7f6;
+  --color-sheet: #ffffff;
+  --color-line: #d3e0e0;
+  --color-brand: #0b7a80;
+  --color-brand-deep: #095c61;
+  --color-brand-soft: #d9eeee;
+  --color-signal: #ff6a3d;
+  --color-signal-soft: #ffe4db;
+  --color-present: #0b6b48;
+  --color-present-soft: #dcf3e8;
+  --color-absent: #b3261e;
+  --color-absent-soft: #fbe4e1;
+
+  /* Radii step up with the size of the surface. */
+  --radius-control: 0.625rem;
+  --radius-frame: 0.75rem;
+  --radius-sheet: 1.25rem;
+
+  --shadow-sheet: 0 1px 0 rgb(12 42 48 / 0.05), 0 28px 56px -28px rgb(12 42 48 / 0.38);
+  --shadow-frame: 0 1px 0 rgb(12 42 48 / 0.06), 0 22px 44px -26px rgb(12 42 48 / 0.42);
+
+  --ease-settle: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5.5rem;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  /* Everything is sized in rem, so scaling the root keeps proportions on very large displays. */
+  @media (min-width: 2200px) {
+    html {
+      font-size: 125%;
+    }
+  }
+  @media (min-width: 3200px) {
+    html {
+      font-size: 150%;
+    }
+  }
+
+  body {
+    background-color: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    background-color: var(--color-signal);
+    color: var(--color-ink);
+  }
+
+  :focus-visible {
+    outline: 3px solid var(--focus-color, #1a4fd6);
+    outline-offset: 3px;
+    border-radius: 0.25rem;
+  }
+
+  button {
+    cursor: pointer;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      transition-duration: 0.01ms !important;
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+    }
+  }
+}
+
+/* Surfaces with a dark or brand-coloured background need a light focus ring. */
+@utility on-dark {
+  --focus-color: #ffffff;
+}
+
+@utility type-display {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(2.6rem, 1.3rem + 5vw, 5rem);
+  line-height: 1.02;
+  letter-spacing: -0.028em;
+  text-wrap: balance;
+}
+
+@utility type-title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(1.9rem, 1.2rem + 2.6vw, 3.25rem);
+  line-height: 1.08;
+  letter-spacing: -0.022em;
+  text-wrap: balance;
+}
+
+@utility type-heading {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.3125rem;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+}
+
+@utility type-lede {
+  font-size: clamp(1.125rem, 1.05rem + 0.35vw, 1.3125rem);
+  line-height: 1.55;
+  text-wrap: pretty;
+}
+
+/*
+ * Sizes for the illustrated product screens. They scale with the width of their
+ * frame (container query units) so a 720px mock-up and a 320px one stay in proportion.
+ */
+@utility mk-xs {
+  font-size: 1.9cqw;
+  line-height: 1.3;
+}
+@utility mk-sm {
+  font-size: 2.3cqw;
+  line-height: 1.3;
+}
+@utility mk-md {
+  font-size: 2.8cqw;
+  line-height: 1.25;
+}
+@utility mk-lg {
+  font-size: 3.8cqw;
+  line-height: 1.15;
+  font-family: var(--font-display);
+  font-weight: 600;
+}
