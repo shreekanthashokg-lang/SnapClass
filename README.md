@@ -92,10 +92,6 @@ cp .env.example .env        # optional for local development
 
 Run the API and the frontend in two terminals:
 
-```bash
-npm run dev:server          # API on http://localhost:8787
-npm run dev                 # frontend on http://localhost:5173 (proxies /api to the server)
-```
 
 Open http://localhost:5173.
 
