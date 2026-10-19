@@ -86,7 +86,7 @@ Requirements: **Node.js 22 or newer** and npm.
 
 ```bash
 npm ci
-cp .env.example .env        # optional for local development
+cp .env.example .env        
 ```
 
 Run the API and the frontend in two terminals:
