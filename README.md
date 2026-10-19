@@ -264,7 +264,7 @@ This repository does not yet include a `LICENSE` file for the project's own code
 
 ## Future scope
 
-Ideas that are **not** implemented:
+Ideas that are implemented:
 
 - Per-student and per-subject attendance analytics.
 - A deep-learning speaker-embedding model for stronger voice matching.
