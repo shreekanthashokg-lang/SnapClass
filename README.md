@@ -78,8 +78,7 @@ binding. It is marked **experimental** by Node (you will see a one-line warning 
 log; it is informational, not an error) but has been stable since Node 22.5 and needs no
 compiler, build tools, or prebuilt-binary download - `npm install` never needs to build
 anything for the database. If you would rather depend on the more established
-`better-sqlite3` package instead, its API is close enough that porting `server/src/db.js`
-back is a small, mechanical change.
+`better-sqlite3` package instead, its API is close 
 
 ## Run it locally
 
