@@ -51,7 +51,7 @@ SnapClass is a working full-stack web application. Teachers create subjects and 
 
 Every result is shown to the teacher before saving, with its score, and can be overridden. That review step is a core part of the design.
 
-## Privacy and data
+## DATA PRIVACY
 
 - **Face photos are never uploaded.** Detection runs in the browser; only the 128-number descriptor is sent.
 - **Voice audio is not stored.** The recording is sent to the server, converted into a short numeric voiceprint, and discarded (uploads are held in memory only).
