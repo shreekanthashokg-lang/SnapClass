@@ -118,7 +118,7 @@ Open http://localhost:8787. In production the server serves the built site and t
 | `npm test` | Vitest unit tests (frontend and server) |
 | `npm run notices` | Regenerate `public/third-party-notices.txt` after changing dependencies |
 
-## Environment variables
+## VARIABLES OF ENVIRONMENT
 
 | Variable | Required | Purpose |
 | --- | --- | --- |
