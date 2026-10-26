@@ -233,7 +233,7 @@ Beyond unit tests, the application was exercised end to end in a real browser ag
 
 **What was not verified with a live device:** the webcam and microphone capture widgets could not be driven in the automated test environment, because it had no working media-capture backend. They were tested only for graceful failure (a clear message instead of a crash). **Please test enrollment and voice attendance on your own device before relying on them.**
 
-## Security notes
+## NOTES OF SEQURITY
 
 - Passwords are hashed with bcrypt; sessions are signed, `HttpOnly`, `SameSite=Lax` cookies, `Secure` in production.
 - Failed sign-ins are rate-limited per IP and username (8 per 15 minutes) and per IP overall, so a shared school network is not locked out. Account creation is limited per IP. The limiter is in-memory and per-process; use a shared store or platform-level limiting if you run several instances.
