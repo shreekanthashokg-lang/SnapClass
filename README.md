@@ -175,7 +175,7 @@ RUN IT UNDER A PROCESS MANAGER (systemd, pm2) behind an HTTPS reverse proxy, and
 
 ### BACKUPS
 
-The whole database is one SQLite file (`snapclass.sqlite3`, plus `-wal`/`-shm` while running) inside `DATA_DIR`. Back it up on a schedule, for example with `sqlite3 snapclass.sqlite3 ".backup backup.sqlite3"`.
+THE COMPLETE WHOLE DATABASE IS ONE  SQLite file (`snapclass.sqlite3`, plus `-wal`/`-shm` while running) inside `DATA_DIR`. Back it up on a schedule, for example with `sqlite3 snapclass.sqlite3 ".backup backup.sqlite3"`.
 
 ## PROJECT STRUCTURE 
 
