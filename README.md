@@ -171,7 +171,7 @@ npm ci && npm run build
 SESSION_SECRET=... DATA_DIR=/var/lib/snapclass SITE_URL=https://... npm start
 ```
 
-Run it under a process manager (systemd, pm2) behind an HTTPS reverse proxy, and back up `DATA_DIR`.
+RUN IT UNDER A PROCESS MANAGER (systemd, pm2) behind an HTTPS reverse proxy, and back up `DATA_DIR`.
 
 ### BACKUPS
 
