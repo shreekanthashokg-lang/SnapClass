@@ -105,7 +105,7 @@ SESSION_SECRET=$(node -e "console.log(require('crypto').randomBytes(48).toString
 
 Open http://localhost:8787. In production the server serves the built site and the API from one process.
 
-### Scripts
+### COMPLETE SCRIPTS
 
 | Command | What it does |
 | --- | --- |
