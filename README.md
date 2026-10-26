@@ -80,7 +80,7 @@ compiler, build tools, or prebuilt-binary download - `npm install` never needs t
 anything for the database. If you would rather depend on the more established
 `better-sqlite3` package instead, its API is close 
 
-## Run it locally
+## LOCALLY RUN IT
 
 Requirements: **Node.js 22 or newer** and npm.
 
