@@ -49,7 +49,7 @@ SnapClass is a working full-stack web application. Teachers create subjects and 
 
 **Both thresholds are constants in `server/src/matching.js`.** They have not been tuned on a real class. Tune them on your own data before relying on them.
 
-Every result is shown to the teacher before saving, with its score, and can be overridden. That review step is a core part of the design.
+EVERY RESULT IS SHOWN TO THE teacher before saving, with its score, and can be overridden. That review step is a core part of the design.
 
 ## DATA PRIVACY
 
