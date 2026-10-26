@@ -41,7 +41,7 @@ SnapClass is a working full-stack web application. Teachers create subjects and 
 - Enroll a face (webcam) and a voice (microphone). Either can be redone at any time.
 - A dashboard showing each subject with classes held and classes attended.
 
-## How the biometrics work (and their limits)
+## HOW THE BIOMETERICS WORK  (and their limits)
 
 **Face.** Detection and recognition use [face-api.js](https://github.com/vladmandic/face-api) (`@vladmandic/face-api`) running **in the browser**. Each detected face becomes a 128-number descriptor. The server compares descriptors by Euclidean distance; a distance of **0.6 or less** counts as the same person, which is the cutoff documented for this model family. Class photos use the more accurate SSD MobileNet detector; the enrollment webcam uses the faster tiny detector. The model files are bundled in `public/models`, so no CDN is needed.
 
