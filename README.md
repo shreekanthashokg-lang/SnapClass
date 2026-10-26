@@ -4,7 +4,7 @@
 
 SnapClass is a working full-stack web application. Teachers create subjects and share a join link or QR code. Students register, enroll their face and voice once, and join subjects. Teachers then take attendance from class photos (face recognition) or by having each student say "I am present" (voice matching), review the generated report, override anything that looks wrong, and confirm it. Every confirmed session is stored and can be exported as CSV.
 
-## Contents
+## CONTENTS
 
 - [What works](#what-works)
 - [How the biometrics work (and their limits)](#how-the-biometrics-work-and-their-limits)
