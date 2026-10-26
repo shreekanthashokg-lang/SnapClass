@@ -89,7 +89,7 @@ npm ci
 cp .env.example .env        
 ```
 
-Run the API and the frontend in two terminals:
+RUN THE API AND THE FRONTEND IN TWO TERMINALS USING SPLITS : 
 
 
 Open http://localhost:5173.
