@@ -260,7 +260,7 @@ Two things worth knowing:
 - **FFmpeg.** `ffmpeg-static` downloads an FFmpeg binary at install time. The npm wrapper is licensed GPL-3.0-or-later, and FFmpeg builds carry their own licence terms depending on how they were compiled. SnapClass runs FFmpeg as a separate command-line process rather than linking to it. If you plan to distribute SnapClass commercially, review FFmpeg's licensing for your situation, or replace it with a system-installed FFmpeg you are comfortable with.
 - **Face models.** The face-api.js model weights in `public/models` come from the `@vladmandic/face-api` package (MIT).
 
-This repository does not yet include a `LICENSE` file for the project's own code. Choose one that suits you and add it before publishing.
+THIS REPOSITORY DOES not yet include a `LICENSE` file for the project's own code. Choose one that suits you and add it before publishing.
 
 ## Future scope
 
