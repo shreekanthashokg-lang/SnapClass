@@ -229,7 +229,7 @@ npm run typecheck && npm run lint && npm test
 
 The Vitest suite covers the demo state machine, URL validation, the matching math and thresholds, request validation and the rate limiter.
 
-Beyond unit tests, the application was exercised end to end in a real browser against the production build: registering a teacher and two students, creating a subject, joining it, enrolling a face, running photo attendance by uploading a multi-person photo (real in-browser face detection and matching), saving a voice session, and checking the records page, CSV export and both students' dashboards. The server API (including voice enrollment and matching with real audio decoding) was also tested directly.
+BEYOND UNIT TESTS, THE APPLICATION WAS EXERCISED  end to end in a real browser against the production build: registering a teacher and two students, creating a subject, joining it, enrolling a face, running photo attendance by uploading a multi-person photo (real in-browser face detection and matching), saving a voice session, and checking the records page, CSV export and both students' dashboards. The server API (including voice enrollment and matching with real audio decoding) was also tested directly.
 
 **What was not verified with a live device:** the webcam and microphone capture widgets could not be driven in the automated test environment, because it had no working media-capture backend. They were tested only for graceful failure (a clear message instead of a crash). **Please test enrollment and voice attendance on your own device before relying on them.**
 
