@@ -251,7 +251,7 @@ BEYOND UNIT TESTS, THE APPLICATION WAS EXERCISED  end to end in a real browser a
 - Single-instance design (SQLite, in-memory rate limiter).
 - The Dockerfile and `render.yaml` are provided but were not executed in the environment where this was built.
 
-## Third-party software
+## SOFTWARE : THIRD-PARTY SOFTWARE
 
 This project is built on open-source software, each package under its own licence and each remaining the work of its authors. The complete list with full licence texts is in [`public/third-party-notices.txt`](public/third-party-notices.txt), published at `/third-party-notices.txt` and linked from the site footer. Keep that file with any redistribution.
 
