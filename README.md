@@ -58,7 +58,7 @@ EVERY RESULT IS SHOWN TO THE teacher before saving, with its score, and can be o
 - Stored: accounts (username, bcrypt password hash, display name), subjects, enrollments, face descriptors, voiceprints, and attendance records.
 - Face descriptors and voiceprints are **biometric data**, which many jurisdictions regulate strictly. Before using SnapClass with real students, follow your institution's policy and any consent or data-protection rules that apply (for example, parental consent for minors). This software does not provide a consent workflow, data-deletion tooling, or a privacy policy; you must add what your situation requires.
 
-## Tech stack
+## COMPLETE TECH STACK
 
 | Area | Choice |
 | --- | --- |
