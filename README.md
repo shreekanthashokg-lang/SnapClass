@@ -96,7 +96,7 @@ Open http://localhost:5173.
 
 > Camera and microphone access require a **secure context**: `https://` or `http://localhost`. On other addresses the browser will block them.
 
-### Run the production build locally
+### RUN THE PRODUCTION BUILD LOCALLY
 
 ```bash
 npm run build
