@@ -162,7 +162,7 @@ docker run -d --name snapclass -p 8787:8787 \
   snapclass
 ```
 
-Put a reverse proxy that terminates HTTPS (Caddy, nginx, a cloud load balancer) in front of it. The `-v` volume is what keeps your data.
+PUT A REVERSE PROXY THAT TERMINATES HTTPS (Caddy, nginx, a cloud load balancer) in front of it. The `-v` volume is what keeps your data.
 
 ### A plain VPS
 
