@@ -227,7 +227,7 @@ All endpoints are under `/api` and use cookie sessions. Teacher-only and student
 npm run typecheck && npm run lint && npm test
 ```
 
-The Vitest suite covers the demo state machine, URL validation, the matching math and thresholds, request validation and the rate limiter.
+THE VITEST SUITE COVERS THE DEMO STATE MACHINE, URL validation, the matching math and thresholds, request validation and the rate limiter.
 
 BEYOND UNIT TESTS, THE APPLICATION WAS EXERCISED  end to end in a real browser against the production build: registering a teacher and two students, creating a subject, joining it, enrolling a face, running photo attendance by uploading a multi-person photo (real in-browser face detection and matching), saving a voice session, and checking the records page, CSV export and both students' dashboards. The server API (including voice enrollment and matching with real audio decoding) was also tested directly.
 
