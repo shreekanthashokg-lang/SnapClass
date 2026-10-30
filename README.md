@@ -56,7 +56,7 @@ EVERY RESULT IS SHOWN TO THE teacher before saving, with its score, and can be o
 - **Face photos are never uploaded.** Detection runs in the browser; only the 128-number descriptor is sent.
 - **Voice audio is not stored.** The recording is sent to the server, converted into a short numeric voiceprint, and discarded (uploads are held in memory only).
 - Stored: accounts (username, bcrypt password hash, display name), subjects, enrollments, face descriptors, voiceprints, and attendance records.
-- Face descriptors and voiceprints are **biometric data**, which many jurisdictions regulate strictly. Before using SnapClass with real students, follow your institution's policy and any consent or data-protection rules that apply (for example, parental consent for minors). This software does not provide a consent workflow, data-deletion tooling, or a privacy policy; you must add what your situation requires.
+- Face descriptors and voiceprints are **biometric data**, which many jurisdictions regulate strictly. Before using SnapClass with real students, follow your institution's policy and any consent or DATA PROTECTION RULES THAT APPLY  (for example, parental consent for minors). This software does not provide a consent workflow, data-deletion tooling, or a privacy policy; you must add what your situation requires.
 
 ## COMPLETE TECH STACK
 
