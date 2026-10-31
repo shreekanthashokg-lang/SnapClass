@@ -207,7 +207,7 @@ scripts/                    Prerender, license-notice generator, social image so
 
 All endpoints are under `/api` and use cookie sessions. Teacher-only and student-only routes return `401` otherwise, and a subject owned by another teacher returns `404`.
 
-| Method and path | Who | Purpose |
+| COMPLETE PATH AND METHOD | Who | Purpose |
 | --- | --- | --- |
 | `POST /auth/{teacher,student}/{register,login}` | anyone | Create an account / sign in |
 | `POST /auth/logout`, `GET /auth/me` | any | Sign out / current user |
