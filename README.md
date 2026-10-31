@@ -255,7 +255,7 @@ BEYOND UNIT TESTS, THE APPLICATION WAS EXERCISED  end to end in a real browser a
 
 This project is built on open-source software, each package under its own licence and each remaining the work of its authors. The complete list with full licence texts is in [`public/third-party-notices.txt`](public/third-party-notices.txt), published at `/third-party-notices.txt` and linked from the site footer. Keep that file with any redistribution.
 
-Two things worth knowing:
+TWO THINGS WORTH KNOWING BEFORE START:
 
 - **FFmpeg.** `ffmpeg-static` downloads an FFmpeg binary at install time. The npm wrapper is licensed GPL-3.0-or-later, and FFmpeg builds carry their own licence terms depending on how they were compiled. SnapClass runs FFmpeg as a separate command-line process rather than linking to it. If you plan to distribute SnapClass commercially, review FFmpeg's licensing for your situation, or replace it with a system-installed FFmpeg you are comfortable with.
 - **Face models.** The face-api.js model weights in `public/models` come from the `@vladmandic/face-api` package (MIT).
