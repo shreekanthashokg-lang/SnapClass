@@ -94,7 +94,7 @@ RUN THE API AND THE FRONTEND IN TWO TERMINALS USING SPLITS :
 
 Open http://localhost:5173.
 
-> Camera and microphone access require a **secure context**: `https://` or `http://localhost`. On other addresses the browser will block them.
+> CAMERA AND MICROPHONE ACCESS REQUIRE A  **secure context**: `https://` or `http://localhost`. ON THE OTHER ADDRESSES THE BROWSER  WILL BLOCK THEM 
 
 ### RUN THE PRODUCTION BUILD LOCALLY
 
