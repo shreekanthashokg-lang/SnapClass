@@ -242,7 +242,7 @@ BEYOND UNIT TESTS, THE APPLICATION WAS EXERCISED  end to end in a real browser a
 - Uploads are limited to 15 MB and held in memory only.
 - There is no email verification, password reset, or account deletion yet.
 
-## Known limitations
+## KNOWN LIMITATIONS OF THIS PROJECT
 
 - Voice matching is lightweight and noticeably less reliable than face matching (see above). Thresholds are untuned.
 - Face matching depends on photo quality: small, blurry, badly lit or turned-away faces may be missed, and the teacher should review the report.
