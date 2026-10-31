@@ -277,4 +277,4 @@ IDEAS THAT ARE IMPLEMENTED :
 Built by
 **SHREEKANTH A GUTTEDAR**
 
-Design, front-end and back-end engineering, and documentation.
+DESIGN, FRONT-END AND BACK-END ENGINEERING AND DOCUMENTATION.
