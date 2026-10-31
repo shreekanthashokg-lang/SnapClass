@@ -2,7 +2,7 @@
 
 **ATTENDANCE FROM A CLASS PHOTO OR A VOICE SAMPLE, EITH A REVIEW STEP BEFORE ANYTHING IS SAVED.**
 
-SnapClass is a working full-stack web application. Teachers create subjects and share a join link or QR code. Students register, enroll their face and voice once, and join subjects. Teachers then take attendance from class photos (face recognition) or by having each student say "I am present" (voice matching), review the generated report, override anything that looks wrong, and confirm it. Every confirmed session is stored and can be exported as CSV.
+SnapClass is a working full-stack web application. Teachers create subjects and share a join link or QR code. Students register, enroll their face and voice once, and join subjects. Teachers then take attendance from class photos (face recognition) or by having each student say "I am present" (voice matching), review the generated report, override anything that looks wrong, and confirm it. EVERY CONFIRMED SESSION IS STORED AND CAN BE EXPORTED AS CSV.
 
 ## CONTENTS
 
