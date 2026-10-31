@@ -47,7 +47,7 @@ SnapClass is a working full-stack web application. Teachers create subjects and 
 
 **Voice.** The server decodes the recording with FFmpeg, computes MFCC features with [Meyda](https://meyda.js.org/), and averages them into a 13-value "voiceprint". Two voiceprints are compared by cosine similarity; **0.82 or higher** counts as a match. This is a deliberately lightweight, dependency-free method, chosen because heavier deep-learning speaker models need native runtimes that are hard to install reliably. **It is meaningfully less accurate than face matching**, particularly with background noise or a different microphone. Treat voice results as a helpful suggestion and use the per-row override.
 
-**Both thresholds are constants in `server/src/matching.js`.** They have not been tuned on a real class. Tune them on your own data before relying on them.
+**Both thresholds are constants in `server/src/matching.js`.** THEY HAVE NOT BEEN TUNED ON A REAL CLASS. Tune them on your own data before relying on them.
 
 EVERY RESULT IS SHOWN TO THE teacher before saving, with its score, and can be overridden. That review step is a core part of the design.
 
